@@ -1,0 +1,77 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.checkoutWrapper {
+  background-color: rgba(33, 33, 33, 0.1);
+  padding: 2rem 2rem;
+  border-radius: var(--border-radius);
+}
+
+.divider {
+  border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+}
+
+.form {
+  margin-top: 1rem;
+  display: flex;
+  column-gap: 4rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  position: relative;
+}
+
+.inputField {
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(33, 33, 33, 0.3);
+}
+
+.checkoutButton {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(33, 33, 33, 0.3);
+  cursor: pointer;
+}
+
+.productList {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.product {
+  border-radius: var(--border-radius);
+  background-color: rgba(33, 33, 33, 0.1);
+  padding: 1rem;
+}
+
+.totalPrice {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+}

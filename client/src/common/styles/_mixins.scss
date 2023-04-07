@@ -1,0 +1,4 @@
+// Mixins
+@mixin shadow-lg() {
+  box-shadow: 0 10px 10px 6px rgb(0 0 0 / 0.1), 0 2px 3px -2px rgb(0 0 0 / 0.1);
+}

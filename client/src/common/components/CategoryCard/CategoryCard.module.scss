@@ -1,0 +1,11 @@
+@import "src/common/styles/mixins";
+
+.main {
+  @include shadow-lg;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  cursor: pointer;
+}
