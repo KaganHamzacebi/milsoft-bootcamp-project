@@ -9,6 +9,10 @@ Components:
 - Checkout Cart
 
 ## Client
+### How to Run
+    cd client/
+    npm install
+    npm start
 
 Tech Stack:
 - ReactJS
@@ -17,6 +21,13 @@ Tech Stack:
 - Redux / Redux-Thunk / Redux-Persist
 
 ## Server
+### How To Run
+    cd /microservice-directory
+    maven clean
+    maven install
+    Run the /src/main/java/com.cart.microservice/Application.java
+    
+    P.S. Backend looks to ecommerce database and can be changed in application.properties file
 
 Tech Stack:
 - Spring Boot 2.0
