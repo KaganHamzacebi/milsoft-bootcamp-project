@@ -1,7 +1,7 @@
 import styles from './Products.module.scss';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemCard from '../../common/components/ItemCard/ItemCard';
+import ProductCard from '../../common/components/ProductCard/ProductCard';
 import type { Product } from '../../common/types/Types';
 import { CategoryService } from '../../common/service/CategoryService';
 import CartMenu from '../../common/components/CartMenu/CartMenu';
@@ -32,7 +32,7 @@ const Products = () => {
             <div className={styles.itemGrid}>
               {
                 products.map((product: Product) => {
-                  return <ItemCard key={product.productId} product={product}/>;
+                  return <ProductCard key={product.productId} product={product}/>;
                 })
               }
             </div>

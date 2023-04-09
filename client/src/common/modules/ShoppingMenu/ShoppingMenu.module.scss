@@ -21,3 +21,23 @@
   margin-top: 1rem;
   gap: 1rem;
 }
+
+.cardWrapper {
+  opacity: 0;
+  animation: my-fade-in 2s forwards;
+
+  @keyframes my-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .cardWrapper:nth-child(#{$i}n) {
+    animation-delay: #{$i * 0.2}s;
+  }
+}

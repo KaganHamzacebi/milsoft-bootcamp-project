@@ -1,4 +1,4 @@
-import styles from './ItemCard.module.scss';
+import styles from './ProductCard.module.scss';
 import type { Product } from '../../types/Types';
 import { useAppDispatch } from '../../app/hooks';
 import { RiShoppingCartFill } from 'react-icons/ri';
@@ -6,7 +6,7 @@ import { NumericFormat } from 'react-number-format';
 import { addCartProduct } from '../../slices/CartControllerSlice';
 import { getProductImage } from '../../utils/Images';
 
-const ItemCard = ({ product }: { product: Product }) => {
+const ProductCard = ({ product }: { product: Product }) => {
   const dispatch = useAppDispatch();
 
   return (
@@ -40,4 +40,4 @@ const ItemCard = ({ product }: { product: Product }) => {
   );
 };
 
-export default ItemCard;
+export default ProductCard;
