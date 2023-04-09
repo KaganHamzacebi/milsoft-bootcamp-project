@@ -5,14 +5,16 @@ import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import { NumericFormat } from 'react-number-format';
 import { useAppDispatch } from '../../app/hooks';
 import { addCartProduct, removeCartProduct } from '../../slices/CartControllerSlice';
+import { getProductImage } from '../../utils/Images';
 
 const CartMenuItem = ({ cartProduct }: { cartProduct: CartProduct }) => {
   const dispatch = useAppDispatch();
 
   return (
     <div className={styles.main}>
+      <img className={styles.productImage} alt='product_image' src={getProductImage(cartProduct.product.imagePath)} />
       <div className={styles.info}>
-        <span>{cartProduct.product.productName}</span>
+        <span className={styles.productName}>{cartProduct.product.productName}</span>
         <NumericFormat
           value={cartProduct.product.salesPrice}
           displayType="text"
