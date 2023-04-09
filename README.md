@@ -25,6 +25,7 @@ Tech Stack:
     cd /microservice-directory
     maven clean
     maven install
+    create Postgre database with name ecommerce
     Run the /src/main/java/com.cart.microservice/Application.java
     
     P.S. Backend looks to ecommerce database and can be changed in application.properties file
