@@ -10,9 +10,17 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long categoryId;
     private String categoryName;
-
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private List<Product> productList;
+    private String imagePath;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     public long getCategoryId() {
         return categoryId;

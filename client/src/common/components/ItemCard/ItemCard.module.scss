@@ -2,11 +2,29 @@
 
 .main {
   @include shadow-lg;
-  padding: 2rem;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+}
+
+.productImage {
+  height: 12rem;
+  width: 14rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.productName {
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .addButton {
@@ -23,6 +41,11 @@
 }
 
 .buttonWrapper {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonInfoWrapper {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,6 +13,16 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    private String imagePath;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
     public long getProductId() {
         return productId;
     }

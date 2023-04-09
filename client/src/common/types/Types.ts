@@ -2,6 +2,7 @@ interface Category {
   categoryId: number;
   categoryName: string;
   productList: Product[];
+  imagePath: string;
 }
 
 interface Product {
@@ -9,6 +10,7 @@ interface Product {
   productName: string;
   salesPrice: number;
   categoryId: number;
+  imagePath: string;
 }
 
 interface Cart {

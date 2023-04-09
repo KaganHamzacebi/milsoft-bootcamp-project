@@ -32,7 +32,7 @@ const ShoppingMenu = () => {
               {
                 categories.map((category: Category) => {
                   return (
-                    <div key={category.categoryId} onClick={() => navigate('/category/' + category.categoryId)}>
+                    <div className={styles.cardWrapper} key={category.categoryId} onClick={() => navigate('/category/' + category.categoryId)}>
                       <CategoryCard category={category}/>
                     </div>
                   );

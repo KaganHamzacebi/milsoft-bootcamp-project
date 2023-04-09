@@ -11,6 +11,15 @@ public class ProductDto {
     private long categoryId;
     @JsonBackReference
     private CategoryDto category;
+    private String imagePath;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     public static ProductDto toDto(Product entity) {
         return Mapper.getInstance().map(entity, ProductDto.class);

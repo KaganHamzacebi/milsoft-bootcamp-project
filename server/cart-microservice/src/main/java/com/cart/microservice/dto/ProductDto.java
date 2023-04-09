@@ -14,6 +14,15 @@ public class ProductDto {
     private long categoryId;
     @JsonBackReference
     private CategoryDto category;
+    private String imagePath;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     public static List<Product> toEntityList(List<ProductDto> productDtoList) {
         return productDtoList.stream()

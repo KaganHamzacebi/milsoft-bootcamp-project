@@ -9,8 +9,16 @@ import java.util.List;
 public class CategoryDto {
     private long categoryId;
     private String categoryName;
-
     private List<ProductDto> productList = new ArrayList<>();
+    private String imagePath;
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     public static CategoryDto toDto(Category entity) {
         return Mapper.getInstance().map(entity, CategoryDto.class);
