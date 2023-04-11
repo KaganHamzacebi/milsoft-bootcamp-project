@@ -1,4 +1,4 @@
-import ShoppingMenu from '../../common/modules/ShoppingMenu/ShoppingMenu';
+import ShoppingMenu from '../common/modules/ShoppingMenu';
 
 const Home = () => {
   return (
